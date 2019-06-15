@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/pay/pay','Pay\AlipayController@pay');
+Route::get('/pay/paygo','Pay\AlipayController@paygo');
+
